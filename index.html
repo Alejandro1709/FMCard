@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./styles/style.css">
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  <title>Frontend Mentor | Stats preview card component</title>
+</head>
+<body class="md:h-screen md:flex md:justify-center md:items-center">
+  <main>
+   <article class="md:flex md:flex-row-reverse items-center text-white my-16 md:my-0 mx-8 md:m-16 rounded-lg overflow-hidden">
+     <!-- IMAGE HOLDER -->
+     <div class="relative w-full md:flex-1">
+       <picture>
+         <source srcset="./images/image-header-desktop.jpg" media="md" />
+         <img src="./images/image-header-mobile.jpg" alt="img" />
+       </picture>
+       <div class="absolute bg-purple-500 top-0 bg-opacity-60 h-full w-full z-10"></div>
+     </div>
+     <!-- CONTENT HODER -->
+     <div class="md:flex md:flex-col md:justify-evenly items-center md:h-64 mx-8 md:flex-1">
+       <h1 class="text-3xl font-bold text-center mt-8 mb-4">Get <span>insights</span> that helps your business grow.</h1>
+       <p class="text-center mb-8 md:mb-0">
+        Discover the benefits of data
+        analytics and make better decisions
+        regarding revenue, customer
+        experience, and overall efficiency.
+       </p>
+       <div class="flex flex-col md:flex-row md:w-full justify-center md:justify-between items-center mb-4 md:mb-0 gap-y-8 md:gap-x-8">
+         <div class="text-center space-y-1">
+           <h2 class="font-bold text-xl">10k+</h2>
+           <p class="uppercase">companies</p>
+         </div>
+         <div class="text-center space-y-1">
+           <h2 class="font-bold text-xl">314</h2>
+           <p class="uppercase">templates</p>
+         </div>
+         <div class="text-center space-y-1">
+           <h2 class="font-bold text-xl">12M+</h2>
+           <p class="uppercase">queries</p>
+         </div>
+       </div>
+     </div>
+   </article>
+  </main>
+  <!-- <div class="text-center text-white">
+    Challenge by <a class="underline" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a class="underline" href="https://www.alejandrolarosa.com">Alejandro La Rosa</a>.
+  </div> -->
+</body>
+</html>
